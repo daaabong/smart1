@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <title>Check Box</title>
 <style type="text/css">
-<!-- 체크박스 위에 공백 없어-->
-
 	.content {
 		width: 50%;
 		margin: 0px auto;
@@ -17,11 +15,6 @@
 		}
 	.lbl {
 		width: 20%;
-		float: left;
-		text-align: right;
-	}
-	.fr {
-		width: 50%;
 		float: left;
 		text-align: right;
 	}
@@ -70,44 +63,59 @@
 	<div class="content">
 		<h1 class="title">Check Box</h1>
 		<form method="GET" action="result.html" name="frm" id="frm" class="frm">
+			<h3></h3>
 			<label class="lbl">과 목 : </label>
 			<div class="subj">
-				<div>
-					<div class="ck">
-						<input type="checkbox" name="subj" value="java" checked>
- 					</div>
-					<div class="vtxt">
-						Java
+					<div>
+						<div class="ck">
+							<input type="checkbox" name="subj" value="java" checked>
+ 						    <!-- 페이지가 뜰 때 자동으로 체크되어있도록 하는 속성: checked
+							checked 는 페이지를 reset 해도 체크 해제되지 않는다. -->
+ 						</div>
+						<div class="vtxt">
+							Java
+						</div>
 					</div>
-					<div class="ck">
-						<input type="checkbox" name="subj" value="HTML" checked>
- 					</div>
-					<div class="vtxt">
-						HTML
+					<div>
+						<div class="ck">
+							<input type="checkbox" name="subj" value="HTML" checked>
+ 						</div>
+						<div class="vtxt">
+							HTML
+						</div>
 					</div>
-					<div class="ck">
-						<input type="checkbox" name="subj" value="JavaScript">
- 					</div>
-					<div class="vtxt">
-						JavaScript
-					</div>					<div class="ck">
-						<input type="checkbox" name="subj" value="Oracle">
- 					</div>
-					<div class="vtxt">
-						Oracle
-					</div>					<div class="ck">
-						<input type="checkbox" name="subj" value="JSD">
- 					</div>
-					<div class="vtxt">
-						JSD
+					<div>
+						<div class="ck">
+							<input type="checkbox" name="subj" value="JavaScript">
+ 						</div>
+						<div class="vtxt">
+							JavaScript
+						</div>					
 					</div>
-					<div class="ck">
-						<input type="checkbox" name="subj" value="Spring">
- 					</div>
-					<div class="vtxt">
-						Spring
+					<div>	
+						<div class="ck">
+							<input type="checkbox" name="subj" value="Oracle">
+ 						</div>
+						<div class="vtxt">
+							Oracle
+						</div>					
+					</div>	
+					<div>
+						<div class="ck">
+							<input type="checkbox" name="subj" value="JSD">
+ 						</div>
+						<div class="vtxt">
+							JSP
+						</div>
 					</div>
-				</div>
+					<div>	
+						<div class="ck">
+							<input type="checkbox" name="subj" value="Spring">
+ 						</div>
+						<div class="vtxt">
+							Spring
+						</div>
+					</div>
 			</div>
 			<div class="bfr"> 
 				<input type="button" class="btn" id="btn1" value="home">
